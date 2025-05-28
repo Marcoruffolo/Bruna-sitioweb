@@ -64,7 +64,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff; 
+    color: #5c4033; 
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
@@ -77,7 +77,7 @@ header nav ul li a:hover {
 
 .hero p {
     font-size: 18px;
-    color: #666;
+    color: #5c4033;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;

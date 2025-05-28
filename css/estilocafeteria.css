@@ -22,7 +22,6 @@ header {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    flex-wrap: wrap;
 }
 
 header h1 {
@@ -36,7 +35,6 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 header nav ul li a {
@@ -65,12 +63,11 @@ header nav ul li a:hover {
     text-align: center;
     color: #5c4033;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 20px;
 }
 
 .hero h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: x;
     margin-bottom: 15px;
 }
 
