@@ -51,7 +51,7 @@ header nav ul li a:hover {
 
 /*------------HERO SECTION--------------*/
 .hero {
-    height: 60vh;
+    height: 80vh;
     background-image: url('../img/Banner bruna.jpg');
     background-size: cover;
     background-position: center;

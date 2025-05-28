@@ -67,7 +67,7 @@ header nav ul li a:hover {
 
 .hero h2 {
     font-family: 'Playfair Display', serif;
-    font-size: x;
+    font-size: 36px;
     margin-bottom: 15px;
 }
 
@@ -78,7 +78,6 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-.pasteleria-content,
 .cafeteria-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -89,7 +88,6 @@ header nav ul li a:hover {
     background-color: #f8f1e9;
 }
 
-.pasteleria-image img,
 .cafeteria-image img {
     width: 100%;
     max-width: 500px;
@@ -97,7 +95,6 @@ header nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pasteleria-text,
 .cafeteria-text {
     display: flex;
     flex-direction: column;
@@ -107,7 +104,6 @@ header nav ul li a:hover {
     border-radius: 10px;
 }
 
-.pasteleria-text h3,
 .cafeteria-text h3 {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
@@ -115,7 +111,6 @@ header nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.pasteleria-text ul,
 .cafeteria-text ul {
     list-style: none;
     color: #f8f1e9;
@@ -123,7 +118,6 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-.pasteleria-text ul li,
 .cafeteria-text ul li {
     margin-bottom: 10px;
 }
@@ -185,7 +179,8 @@ footer {
     }
 
     .hero {
-        height: auto;
+        height: 60vh;
+        padding: 20px;
     }
 
     .hero h2 {
@@ -196,18 +191,15 @@ footer {
         font-size: 16px;
     }
 
-    .pasteleria-content,
     .cafeteria-content {
         grid-template-columns: 1fr;
         padding: 20px;
     }
 
-    .pasteleria-image img,
     .cafeteria-image img {
         max-width: 100%;
     }
 
-    .pasteleria-text,
     .cafeteria-text {
         padding: 15px;
     }
