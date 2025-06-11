@@ -52,7 +52,7 @@ header nav ul li a:hover {
 /*------------MAIN--------------*/
 .heroindex{
     height: 80vh; 
-    background-image: url('../img/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg'); 
+    background-image: url('../img/americanchocolate.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -79,7 +79,7 @@ header nav ul li a:hover {
 
 .hero {
     height: 80vh;
-    background-image: url('../img/Banner bruna.jpg');
+    background-image: url('../img/bannerbruna.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
