@@ -1,0 +1,31 @@
+$color-principal: #5c4033;
+$color-fondo: #f8f1e9;
+$color-texto: #333;
+$fuente-titulos: 'Playfair Display', serif;
+$fuente-texto: 'Roboto', sans-serif;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: $color-fondo;
+}
+
+@mixin sombra {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+// Extends
+%text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

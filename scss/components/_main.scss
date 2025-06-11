@@ -1,0 +1,114 @@
+.heroindex,
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    color: $color-principal;
+    @extend %text-shadow;
+
+    &.heroindex {
+        background-image: url('../img/americanchocolate.jpg');
+
+        img {
+            max-width: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &.hero {
+        background-image: url('../img/bannerbruna.jpg');
+
+        h2 {
+            font-family: $fuente-titulos;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    }
+}
+
+.pasteleria-content,
+.cafeteria-content,
+.about-content,
+.takeaway-content,
+.amamos-content {
+    @include grid-2-cols;
+
+    .pasteleria-image img,
+    .cafeteria-image img,
+    .about-image img,
+    .takeaway-image img,
+    .amamos-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        @include sombra;
+    }
+
+    .pasteleria-text,
+    .cafeteria-text,
+    .about-text,
+    .takeaway-text,
+    .amamos-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #3f2a1f;
+        padding: 20px;
+        border-radius: 10px;
+
+        h3 {
+            font-family: $fuente-titulos;
+            font-size: 28px;
+            color: $color-fondo;
+            margin-bottom: 15px;
+        }
+
+        ul,
+        p {
+            color: $color-fondo;
+            font-size: 16px;
+            line-height: 1.6;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.mapa-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: $color-fondo;
+
+    h3 {
+        font-family: $fuente-titulos;
+        font-size: 28px;
+        color: $color-principal;
+        margin-bottom: 30px;
+    }
+
+    .mapa-contenedor {
+        @include flex-center;
+
+        iframe {
+            width: 90%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+            @include sombra;
+        }
+    }
+}
