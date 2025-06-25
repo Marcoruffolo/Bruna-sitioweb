@@ -1,8 +1,4 @@
-.heroindex,
-.hero {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +7,16 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #333;
   background-color: #f8f1e9;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
 header {
@@ -23,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 header h1 {
@@ -60,247 +64,91 @@ header nav ul li a:hover {
   flex-direction: column;
   text-align: center;
   color: #5c4033;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .heroindex.heroindex,
 .hero.heroindex {
   background-image: url("../img/americanchocolate.jpg");
 }
-.heroindex.heroindex img,
-.hero.heroindex img {
-  max-width: 300px;
-  width: 100%;
-  margin-bottom: 20px;
-}
 .heroindex.hero,
 .hero.hero {
   background-image: url("../img/bannerbruna.jpg");
 }
-.heroindex.hero h2,
-.hero.hero h2 {
+.heroindex img,
+.hero img {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.heroindex h2,
+.hero h2 {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   margin-bottom: 15px;
 }
-.heroindex.hero p,
-.hero.hero p {
+.heroindex p,
+.hero p {
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.6;
 }
 
-.pasteleria-content,
-.cafeteria-content,
-.about-content,
-.takeaway-content,
-.amamos-content {
+/* ------------ NUEVA SECCIÓN DESTACADA PARA INDEX ------------ */
+.section-destacada {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fffdf9;
+}
+.section-destacada h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #5c4033;
+}
+.section-destacada p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* ------------ GRILLAS Y CAJAS DE TEXTO ------------ */
+.grid-2col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 40px 20px;
-  background-color: #f8f1e9;
 }
-.pasteleria-content .pasteleria-image img,
-.pasteleria-content .cafeteria-image img,
-.pasteleria-content .about-image img,
-.pasteleria-content .takeaway-image img,
-.pasteleria-content .amamos-image img,
-.cafeteria-content .pasteleria-image img,
-.cafeteria-content .cafeteria-image img,
-.cafeteria-content .about-image img,
-.cafeteria-content .takeaway-image img,
-.cafeteria-content .amamos-image img,
-.about-content .pasteleria-image img,
-.about-content .cafeteria-image img,
-.about-content .about-image img,
-.about-content .takeaway-image img,
-.about-content .amamos-image img,
-.takeaway-content .pasteleria-image img,
-.takeaway-content .cafeteria-image img,
-.takeaway-content .about-image img,
-.takeaway-content .takeaway-image img,
-.takeaway-content .amamos-image img,
-.amamos-content .pasteleria-image img,
-.amamos-content .cafeteria-image img,
-.amamos-content .about-image img,
-.amamos-content .takeaway-image img,
-.amamos-content .amamos-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.grid-2col.reverse {
+  direction: rtl;
 }
-.pasteleria-content .pasteleria-text,
-.pasteleria-content .cafeteria-text,
-.pasteleria-content .about-text,
-.pasteleria-content .takeaway-text,
-.pasteleria-content .amamos-text,
-.cafeteria-content .pasteleria-text,
-.cafeteria-content .cafeteria-text,
-.cafeteria-content .about-text,
-.cafeteria-content .takeaway-text,
-.cafeteria-content .amamos-text,
-.about-content .pasteleria-text,
-.about-content .cafeteria-text,
-.about-content .about-text,
-.about-content .takeaway-text,
-.about-content .amamos-text,
-.takeaway-content .pasteleria-text,
-.takeaway-content .cafeteria-text,
-.takeaway-content .about-text,
-.takeaway-content .takeaway-text,
-.takeaway-content .amamos-text,
-.amamos-content .pasteleria-text,
-.amamos-content .cafeteria-text,
-.amamos-content .about-text,
-.amamos-content .takeaway-text,
-.amamos-content .amamos-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.grid-2col.reverse > * {
+  direction: ltr;
+}
+
+.text-box {
   background-color: #3f2a1f;
-  padding: 20px;
+  padding: 25px;
+  color: #f8f1e9;
   border-radius: 10px;
 }
-.pasteleria-content .pasteleria-text h3,
-.pasteleria-content .cafeteria-text h3,
-.pasteleria-content .about-text h3,
-.pasteleria-content .takeaway-text h3,
-.pasteleria-content .amamos-text h3,
-.cafeteria-content .pasteleria-text h3,
-.cafeteria-content .cafeteria-text h3,
-.cafeteria-content .about-text h3,
-.cafeteria-content .takeaway-text h3,
-.cafeteria-content .amamos-text h3,
-.about-content .pasteleria-text h3,
-.about-content .cafeteria-text h3,
-.about-content .about-text h3,
-.about-content .takeaway-text h3,
-.about-content .amamos-text h3,
-.takeaway-content .pasteleria-text h3,
-.takeaway-content .cafeteria-text h3,
-.takeaway-content .about-text h3,
-.takeaway-content .takeaway-text h3,
-.takeaway-content .amamos-text h3,
-.amamos-content .pasteleria-text h3,
-.amamos-content .cafeteria-text h3,
-.amamos-content .about-text h3,
-.amamos-content .takeaway-text h3,
-.amamos-content .amamos-text h3 {
+.text-box h3 {
   font-family: "Playfair Display", serif;
   font-size: 28px;
-  color: #f8f1e9;
   margin-bottom: 15px;
 }
-.pasteleria-content .pasteleria-text ul,
-.pasteleria-content .pasteleria-text p,
-.pasteleria-content .cafeteria-text ul,
-.pasteleria-content .cafeteria-text p,
-.pasteleria-content .about-text ul,
-.pasteleria-content .about-text p,
-.pasteleria-content .takeaway-text ul,
-.pasteleria-content .takeaway-text p,
-.pasteleria-content .amamos-text ul,
-.pasteleria-content .amamos-text p,
-.cafeteria-content .pasteleria-text ul,
-.cafeteria-content .pasteleria-text p,
-.cafeteria-content .cafeteria-text ul,
-.cafeteria-content .cafeteria-text p,
-.cafeteria-content .about-text ul,
-.cafeteria-content .about-text p,
-.cafeteria-content .takeaway-text ul,
-.cafeteria-content .takeaway-text p,
-.cafeteria-content .amamos-text ul,
-.cafeteria-content .amamos-text p,
-.about-content .pasteleria-text ul,
-.about-content .pasteleria-text p,
-.about-content .cafeteria-text ul,
-.about-content .cafeteria-text p,
-.about-content .about-text ul,
-.about-content .about-text p,
-.about-content .takeaway-text ul,
-.about-content .takeaway-text p,
-.about-content .amamos-text ul,
-.about-content .amamos-text p,
-.takeaway-content .pasteleria-text ul,
-.takeaway-content .pasteleria-text p,
-.takeaway-content .cafeteria-text ul,
-.takeaway-content .cafeteria-text p,
-.takeaway-content .about-text ul,
-.takeaway-content .about-text p,
-.takeaway-content .takeaway-text ul,
-.takeaway-content .takeaway-text p,
-.takeaway-content .amamos-text ul,
-.takeaway-content .amamos-text p,
-.amamos-content .pasteleria-text ul,
-.amamos-content .pasteleria-text p,
-.amamos-content .cafeteria-text ul,
-.amamos-content .cafeteria-text p,
-.amamos-content .about-text ul,
-.amamos-content .about-text p,
-.amamos-content .takeaway-text ul,
-.amamos-content .takeaway-text p,
-.amamos-content .amamos-text ul,
-.amamos-content .amamos-text p {
-  color: #f8f1e9;
+.text-box p,
+.text-box ul {
   font-size: 16px;
-  line-height: 1.6;
 }
-.pasteleria-content .pasteleria-text ul li,
-.pasteleria-content .pasteleria-text p li,
-.pasteleria-content .cafeteria-text ul li,
-.pasteleria-content .cafeteria-text p li,
-.pasteleria-content .about-text ul li,
-.pasteleria-content .about-text p li,
-.pasteleria-content .takeaway-text ul li,
-.pasteleria-content .takeaway-text p li,
-.pasteleria-content .amamos-text ul li,
-.pasteleria-content .amamos-text p li,
-.cafeteria-content .pasteleria-text ul li,
-.cafeteria-content .pasteleria-text p li,
-.cafeteria-content .cafeteria-text ul li,
-.cafeteria-content .cafeteria-text p li,
-.cafeteria-content .about-text ul li,
-.cafeteria-content .about-text p li,
-.cafeteria-content .takeaway-text ul li,
-.cafeteria-content .takeaway-text p li,
-.cafeteria-content .amamos-text ul li,
-.cafeteria-content .amamos-text p li,
-.about-content .pasteleria-text ul li,
-.about-content .pasteleria-text p li,
-.about-content .cafeteria-text ul li,
-.about-content .cafeteria-text p li,
-.about-content .about-text ul li,
-.about-content .about-text p li,
-.about-content .takeaway-text ul li,
-.about-content .takeaway-text p li,
-.about-content .amamos-text ul li,
-.about-content .amamos-text p li,
-.takeaway-content .pasteleria-text ul li,
-.takeaway-content .pasteleria-text p li,
-.takeaway-content .cafeteria-text ul li,
-.takeaway-content .cafeteria-text p li,
-.takeaway-content .about-text ul li,
-.takeaway-content .about-text p li,
-.takeaway-content .takeaway-text ul li,
-.takeaway-content .takeaway-text p li,
-.takeaway-content .amamos-text ul li,
-.takeaway-content .amamos-text p li,
-.amamos-content .pasteleria-text ul li,
-.amamos-content .pasteleria-text p li,
-.amamos-content .cafeteria-text ul li,
-.amamos-content .cafeteria-text p li,
-.amamos-content .about-text ul li,
-.amamos-content .about-text p li,
-.amamos-content .takeaway-text ul li,
-.amamos-content .takeaway-text p li,
-.amamos-content .amamos-text ul li,
-.amamos-content .amamos-text p li {
+.text-box p li,
+.text-box ul li {
   margin-bottom: 10px;
 }
 
+/* ------------ MAPA ------------ */
 .mapa-section {
   padding: 50px 20px;
   text-align: center;
@@ -315,7 +163,6 @@ header nav ul li a:hover {
 .mapa-section .mapa-contenedor {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .mapa-section .mapa-contenedor iframe {
   width: 90%;
@@ -327,8 +174,9 @@ header nav ul li a:hover {
 
 footer {
   background-color: #f8f1e9;
-  padding: 20px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
 }
 footer .footer-content {
   display: grid;
@@ -346,16 +194,17 @@ footer .footer-content p {
 }
 footer .social-icons {
   display: flex;
-  gap: 40px;
-  justify-content: flex-end;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 15px;
 }
 footer .social-icons img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s;
 }
 footer .social-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 @media (max-width: 768px) {
@@ -369,74 +218,31 @@ footer .social-icons img:hover {
     gap: 10px;
     margin-top: 10px;
   }
-  .heroindex {
-    height: 60vh;
-  }
-  .heroindex img {
-    max-width: 200px;
-  }
-  .heroindex h2 {
-    font-size: 28px;
-  }
-  .hero {
+  .heroindex, .hero {
     height: 60vh;
     padding: 20px;
   }
-  .hero h2 {
+  .heroindex h2, .hero h2 {
     font-size: 28px;
   }
-  .hero p {
+  .heroindex p, .hero p {
     font-size: 16px;
   }
-  .about-content,
-  .takeaway-content,
-  .amamos-content,
-  .pasteleria-content,
-  .cafeteria-content {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-  .about-content img,
-  .takeaway-content img,
-  .amamos-content img,
-  .pasteleria-content img,
-  .cafeteria-content img {
-    max-width: 100%;
-  }
-  .about-content .about-text,
-  .about-content .takeaway-text,
-  .about-content .amamos-text,
-  .about-content .pasteleria-text,
-  .about-content .cafeteria-text,
-  .takeaway-content .about-text,
-  .takeaway-content .takeaway-text,
-  .takeaway-content .amamos-text,
-  .takeaway-content .pasteleria-text,
-  .takeaway-content .cafeteria-text,
-  .amamos-content .about-text,
-  .amamos-content .takeaway-text,
-  .amamos-content .amamos-text,
-  .amamos-content .pasteleria-text,
-  .amamos-content .cafeteria-text,
-  .pasteleria-content .about-text,
-  .pasteleria-content .takeaway-text,
-  .pasteleria-content .amamos-text,
-  .pasteleria-content .pasteleria-text,
-  .pasteleria-content .cafeteria-text,
-  .cafeteria-content .about-text,
-  .cafeteria-content .takeaway-text,
-  .cafeteria-content .amamos-text,
-  .cafeteria-content .pasteleria-text,
-  .cafeteria-content .cafeteria-text {
-    padding: 15px;
-  }
-  .footer-content {
+  .grid-2col,
+  .grid-2col.reverse {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 20px;
-    flex-direction: column;
   }
-  .social-icons {
-    justify-content: center;
+  .grid-2col > *,
+  .grid-2col.reverse > * {
+    direction: ltr;
+  }
+  .text-box {
+    padding: 20px;
+  }
+  .section-destacada h2 {
+    font-size: 26px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
