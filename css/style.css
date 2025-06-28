@@ -93,7 +93,6 @@ header nav ul li a:hover {
   margin: 0 auto;
 }
 
-/* ------------ NUEVA SECCIÓN DESTACADA PARA INDEX ------------ */
 .section-destacada {
   padding: 60px 20px;
   text-align: center;
@@ -111,7 +110,6 @@ header nav ul li a:hover {
   font-size: 18px;
 }
 
-/* ------------ GRILLAS Y CAJAS DE TEXTO ------------ */
 .grid-2col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -148,7 +146,6 @@ header nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* ------------ MAPA ------------ */
 .mapa-section {
   padding: 50px 20px;
   text-align: center;
